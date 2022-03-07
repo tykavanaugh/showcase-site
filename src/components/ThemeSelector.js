@@ -21,7 +21,7 @@ const ThemeSelector = (props) => {
   return (
     <Form>
         <Form.Check inline
-          className='text-light' 
+          className={`text-${props.textTheme}`}
           type="switch"
           id="custom-switch"
           label="Light/Dark"
@@ -29,7 +29,7 @@ const ThemeSelector = (props) => {
           onChange={props.toggleTheme}
         />
       <Form.Check inline
-        className='text-light' 
+        className={`text-${props.textTheme}`}
         type="switch"
         id="custom-switch"
         label="Plain/Color"

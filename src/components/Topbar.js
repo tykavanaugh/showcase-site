@@ -5,7 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 const Topbar = (props) => {
   return (
   <>
-  <nav className="navbar navbar-dark bg-dark navbar-expand-lg">
+  <nav className={`navbar navbar-${props.darkTheme === 'primary'? 'dark' : props.darkTheme} bg-${props.darkTheme} navbar-expand-lg`}>
     <div className="container-fluid">
       <HashLink className="navbar-brand" to="#">Ty Kavanaugh</HashLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
