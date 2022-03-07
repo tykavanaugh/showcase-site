@@ -1,7 +1,7 @@
 import React from 'react'
 import { Navbar,Nav} from 'react-bootstrap'
 
-const Bottombar = () => {
+const Bottombar = (props) => {
   return (
   <>
   <nav className="navbar navbar-dark bg-light navbar-expand-lg">

@@ -2,7 +2,7 @@ import React from 'react'
 import { Card } from 'react-bootstrap'
 import placeholder from '../images/placeholder.jpg'
 
-const ShowcaseItem = () => {
+const ShowcaseItem = (props) => {
   return (
     <>
     <Card bg='dark' className='text-light'>

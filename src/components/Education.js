@@ -1,8 +1,8 @@
 import React from 'react'
 
-const Education = () => {
+const Education = (props) => {
   return (
-    <div className="bg-light text-dark p-5">
+    <div className={`bg-${props.darkTheme} text-${props.textTheme} p-5`}>
       <div className="container">
         <div>
           <p>Education</p>
