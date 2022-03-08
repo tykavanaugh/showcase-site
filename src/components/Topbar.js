@@ -1,13 +1,16 @@
 import React from 'react'
 import ThemeSelector from './ThemeSelector'
 import { HashLink } from 'react-router-hash-link';
+import { Button } from 'react-bootstrap';
 
 const Topbar = (props) => {
   return (
   <>
   <nav className={`navbar navbar-${props.darkTheme === 'primary'? 'dark' : props.darkTheme} bg-${props.darkTheme} navbar-expand-lg`}>
     <div className="container-fluid">
-      <HashLink className="navbar-brand" to="#">Ty Kavanaugh</HashLink>
+      <HashLink className="navbar-brand" to="#">
+        <Button size='lg' variant={`outline-success`}>Ty Kavanaugh</Button>
+      </HashLink>
       <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span className="navbar-toggler-icon"></span>
       </button>
