@@ -1,14 +1,21 @@
 import React from 'react'
 import { Navbar,Nav} from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 
 const Bottombar = (props) => {
   return (
   <>
-  <nav className="navbar navbar-dark bg-light navbar-expand-lg">
+  <nav className={`navbar navbar-${props.darkTheme === 'primary'? 'dark' : props.darkTheme} bg-${props.darkTheme} navbar-expand-lg`}>
     <div className="container-fluid justify-content-evenly">
-      <div className="m-3">Github</div>
-      <div className="m-3">LinkdIn</div>
-      <div className="m-3">StackOverflow</div>
+      <Link to="https://github.com/tykavanaugh" style={{ textDecoration: 'none' }}>
+        <div className={`m-3 link-${props.lightTheme} `}>Github</div>
+      </Link>
+      <Link to="https://www.linkedin.com/in/tykavanaugh/" style={{ textDecoration: 'none' }}>
+        <div className={`m-3 link-${props.lightTheme} `}>LinkedIn</div>
+      </Link>
+      <Link to="https://stackoverflow.com/users/13619599/tyk" style={{ textDecoration: 'none' }}>
+        <div className={`m-3 link-${props.lightTheme} `}>StackOverflow</div>
+      </Link>
     </div>
   </nav>
   </>

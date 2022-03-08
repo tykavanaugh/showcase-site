@@ -1,5 +1,6 @@
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.scss';
 import Topbar from './components/Topbar';
 import Bottombar from './components/Bottombar';
 import Projects from './components/Projects';
@@ -41,7 +42,7 @@ function App() {
   }
 
   return (
-  <div className='bg-dark'>
+  <div className={`bg-${darkTheme}`}>
     <Topbar 
       lightTheme={lightTheme} 
       darkTheme={darkTheme} 

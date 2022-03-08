@@ -13,3 +13,9 @@
   color: white;
 }
 
+.certimg {
+  width: 175px; /* You can set the dimensions to whatever you want */
+  height: 175px;
+  object-fit: cover;
+}
+
