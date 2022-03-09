@@ -10,13 +10,13 @@ const Bottombar = (props) => {
   <nav className={`navbar navbar-${props.darkTheme === 'primary'? 'dark' : props.darkTheme} bg-${props.darkTheme} navbar-expand-lg`}>
     <div className="container-fluid justify-content-evenly">
       <Link to="https://github.com/tykavanaugh" style={{ textDecoration: 'none' }}>
-        <Button variant={`outline-${props.lightTheme}`}>Github &nbsp;<AiOutlineGithub size={28}/></Button>
+        <Button size='lg' variant={`outline-${props.lightTheme}`}>Github &nbsp;<AiOutlineGithub size={28}/></Button>
       </Link>
       <Link to="https://www.linkedin.com/in/tykavanaugh/" style={{ textDecoration: 'none' }}>
-        <Button variant={`outline-${props.lightTheme}`}>LinkedIn &nbsp;<AiOutlineLinkedin size={28}/></Button>
+        <Button size='lg' variant={`outline-${props.lightTheme}`}>LinkedIn &nbsp;<AiOutlineLinkedin size={28}/></Button>
       </Link>
       <Link to="https://stackoverflow.com/users/13619599/tyk" style={{ textDecoration: 'none' }}>
-        <Button variant={`outline-${props.lightTheme}`}>Stack Overflow &nbsp;<BsStackOverflow size={28}/></Button>
+        <Button size='lg' variant={`outline-${props.lightTheme}`}>Stack Overflow &nbsp;<BsStackOverflow size={28}/></Button>
       </Link>
     </div>
   </nav>
