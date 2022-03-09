@@ -29,13 +29,14 @@ $cyan:    #0dcaf0;
 // define theme
 
 $primary:       #488f6b;
-$secondary:     $gray-600;
-$success:       #b34f4f;
-$info:          #cc66cc;
+$secondary:     #534E5F;
+$success:       #2C6F9A;
+$info:          #67A6B4;
 $warning:       $yellow;
 $danger:        $red;
 $light:         $gray-100;
 $dark:          $gray-900;
+
 
 
 @import "~bootstrap/scss/bootstrap";
